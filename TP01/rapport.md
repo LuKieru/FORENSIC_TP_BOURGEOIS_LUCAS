@@ -1,6 +1,4 @@
-rapport 
-
-Analyse forensic du contenu de la clé USB.
+rapport d'analyse Forensique sur l'objet suivant : Clé USB trouvée sur le parking.
 
 Tout d'abord, vérifier l'intégrité du contenu USB_Image :
 
@@ -45,4 +43,8 @@ le fichier ini contenait lui :
 Path=secret.png
 DeletionDate=2023-02-10T22:21:51
 
-même résultat que j'ai obtenu lors de la commande strings.
+C'est le même résultat que j'ai obtenu lors de la commande strings.
+
+
+Rapport réalisé le 13/02/2023 à 16:09 par Lucas Bourgeois
+
