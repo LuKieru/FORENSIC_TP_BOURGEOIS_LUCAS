@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml xmloutputversion='1.0'>
+  <metadata 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Carve Report</dc:type>
+  </metadata>
+  <creator>
+    <package>PhotoRec</package>
+    <version>7.1</version>
+    <build_environment>
+      <compiler>GCC 11.2</compiler>
+      <library name='libext2fs' version='1.46.5'/>
+      <library name='libewf' version='none'/>
+      <library name='libjpeg' version='libjpeg-turbo-2.1.1'/>
+      <library name='libntfs' version='libntfs-3g'/>
+      <library name='zlib' version='1.2.11'/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Linux</os_sysname>
+      <os_release>5.15.0-60-generic</os_release>
+      <os_version>#66-Ubuntu SMP Fri Jan 20 14:29:49 UTC 2023</os_version>
+      <host>lukubuntu</host>
+      <arch>x86_64</arch>
+      <uid>1000</uid>
+      <start_time>2023-02-13T15:51:44+0100</start_time>
+    </execution_environment>
+  </creator>
+  <source>
+    <image_filename>USB_Image</image_filename>
+    <sectorsize>512</sectorsize>
+    <image_size>3931111424</image_size>
+    <volume>
+      <byte_runs>
+        <byte_run offset='0' img_offset='0' len='3931111424'/>
+      </byte_runs>
+      <block_size>4096</block_size>
+    </volume>
+  </source>
+  <configuration>
+  </configuration>
+  <fileobject>
+    <filename>f0016392.fat</filename>
+    <filesize>4096</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='8392704' len='4096'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0016416.jpg</filename>
+    <filesize>50979</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='8404992' len='53248'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0016520.png</filename>
+    <filesize>24449</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='8458240' len='24576'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0016568.jpg</filename>
+    <filesize>2370799</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='8482816' len='2371584'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0021608.png</filename>
+    <filesize>9595497</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='11063296' len='9596928'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0040360.fat</filename>
+    <filesize>4096</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='20664320' len='4096'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0040368.fat</filename>
+    <filesize>4096</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='20668416' len='4096'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0040376.fat</filename>
+    <filesize>4096</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='20672512' len='4096'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0040384.ini</filename>
+    <filesize>62</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='20676608' len='4096'/>
+    </byte_runs>
+  </fileobject>
+  <fileobject>
+    <filename>f0040392.png</filename>
+    <filesize>24449</filesize>
+    <byte_runs>
+      <byte_run offset='0' img_offset='20680704' len='24576'/>
+    </byte_runs>
+  </fileobject>
+</dfxml>
