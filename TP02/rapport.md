@@ -40,6 +40,6 @@ Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fich
          Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 lignes qui contiennent la commune de LYON.
          
         
-    	</details>
+    	
 </body>
 </html>
