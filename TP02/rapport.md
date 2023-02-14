@@ -51,7 +51,8 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
          Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 
          lignes qui contiennent la commune de LYON.
          
-        
+        </details>
+        epaoifjopziergfjh pouzrgh
     	
 </body>
 </html>
@@ -59,14 +60,4 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
 
 
 
-<!DOCTYPE html>
-<head>
-<head>
-</head>
-<body>
-    	
-        	<summary>Réponse attendue</summary>
-        	
-</body>
-</html>
-  
+
