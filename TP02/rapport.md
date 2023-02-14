@@ -20,7 +20,9 @@ Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fich
          
          awk -F";" 
          
-         Va donner le type de séparation dans le fichier CSV (donc ici, le point virgule qui par défaut est simplement une virgule). Cette partie dont le -F est important car sans spécification du format de séparation, le résultat change complètement la façon de lire le fichier et donc le résultat.
+         Va donner le type de séparation dans le fichier CSV (donc ici, le point virgule qui par défaut est
+         simplement une virgule). Cette partie dont le -F est important car sans spécification du format 
+         de séparation, le résultat change complètement la façon de lire le fichier et donc le résultat.
          
          
          '{print $9}'
