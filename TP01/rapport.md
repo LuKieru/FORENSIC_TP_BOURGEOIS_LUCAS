@@ -101,7 +101,7 @@ Ci-joint une copie de ce dossiersi vous cliquez [ici](https://github.com/LuKieru
 Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux 
 puis 2 contenant le contenu suivant : 
 
-<mark>bosch{1MAG3}</mark>
+### bosch{1MAG3}
 
 
 Le fichier .ini contenait lui :
@@ -112,7 +112,7 @@ Path=secret.png
 DeletionDate=2023-02-10T22:21:51
 ```
 
-C'est le même résultat obtenu lors de la commande strings.
+> C'est le même résultat obtenu lors de la commande strings.
 
 Le Flag a donc été trouvé, fin du rapport d'analyse.
 
