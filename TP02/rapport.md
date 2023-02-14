@@ -37,9 +37,11 @@ Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fich
          
          | grep "LYON" | wc -l
          
-         Cette dernière partie va compléter la commande : on va chercher uniquement les caractères "LYON" et compter les lignes qui les contiennent.
+         Cette dernière partie va compléter la commande : on va chercher uniquement la chaine de caractères
+         "LYON" et compter les lignes qui les contiennent.
          
-         Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 lignes qui contiennent la commune de LYON.
+         Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 
+         lignes qui contiennent la commune de LYON.
          
         
     	
