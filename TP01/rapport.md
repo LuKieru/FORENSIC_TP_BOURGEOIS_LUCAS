@@ -81,9 +81,9 @@ photorec USB.Image
 
 Le résultat se trouve dans un dossier que la commande a créé :
 
-![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recupdir_1.1.png "recupdir1")
+![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recup_dir_1.1.png "recupdir1")
 
-![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recupdir_1.png "recupdir 2")
+![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recup_dir_1.png "recupdir 2")
 
 
 
