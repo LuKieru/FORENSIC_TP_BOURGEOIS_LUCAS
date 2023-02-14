@@ -1,26 +1,28 @@
-#H1 rapport d'analyse Forensique sur l'objet suivant : Clé USB trouvée sur le parking.
+# H1 rapport d'analyse Forensique sur l'objet suivant : Clé USB trouvée sur le parking.
 
-#Ħ2 Rappel du contexte :
+# Ħ2 Rappel du contexte :
 
 Un agent a trouvé une clé USB près du parking du commissariat. Il l'a donc apportée au service forensic pour savoir si cette clé était malveillante ou non avant de la brancher.
 
-#H2 Analyse :
+# H2 Analyse :
 
 Avant toute analyse, on s'assure qu'elle n'a pas été branchée sur les postes du commissariat. L'agent a donc bien fait de venir le service forensic directement puisqu'on ne sait ce qu'elle contient.
 
 Au préalable, on branchera cette clé sur aucun terminal relié au réseau du commissariat. Ici, nous la brancherons sur un poste que l'on nomme **Station blanche**** puisqu'elle n'est reliée à aucun réseau et est dédiée à l'analyse de supports comme par exemple cette clé USB.
 
-#2 Début de l'analyse :
+# H2 Début de l'analyse :
 
 Nous sommes donc sur un environnement Linux, Ubuntu. Après avoir branché cette clé, voici les étapes effectuées :
 
 Tout d'abord, vérifier l'intégrité du contenu USB_Image :
-```SHA256sum USB_Image
+```
+SHA256sum USB_Image
 ```
 
 la réponse : 
  
-```a6fd7b3072187b2b6a31119f4580e58d5219fef157514c28d2de6df5ecf3185c  USB_Image
+```
+a6fd7b3072187b2b6a31119f4580e58d5219fef157514c28d2de6df5ecf3185c  USB_Image
 ```
 
 Ensuite, par "tatonnement", j'ai passé plusieur commandes dont :
