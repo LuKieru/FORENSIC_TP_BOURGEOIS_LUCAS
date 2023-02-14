@@ -49,14 +49,26 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
          "LYON" et compter les lignes qui les contiennent.
          
          Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 
-         lignes qui contiennent la commune de LYON.
-         </details>
-         
-
-            	
+         lignes qui contiennent la commune de LYON.            	
 </body>
 </html>
 
+<details>
+  <summary>Click me</summary>
+  
+  ### Heading
+  1. Foo
+  2. Bar
+     * Baz
+     * Qux
+
+  ### Some Code
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
 
 
 
