@@ -1,6 +1,6 @@
 ## Exercice : 
 
-Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fichier 'consommation-annuelle-residentielle-par-adresse.csv' qui contiennent la ville de LYON dans la colonne NOM_Commune.
+Contexte :
 
 Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRIS dans la commune de Lyon.
 
@@ -19,9 +19,12 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
 </head>
 <body>
     	<details>
-        	<summary>Réponse</summary>
+        	<summary>Réponse attendue</summary>
+         
          
          awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
+         
+         
          
          awk -F";" 
          
