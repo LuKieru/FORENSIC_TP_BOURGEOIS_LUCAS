@@ -43,7 +43,7 @@ Qui nous indique pas mal d'informations sur l'objet non identifié.
 Ensuite, une autre commande qui a attiré mon attention :
 
 ```
-strings USB_Image :
+strings USB_Image
 ```
 
 Cette commande a retourné de nombreux résultats. J'ai alors lancé cette commande pour pouvoir lire les resultats dans un fichier : 
@@ -77,9 +77,15 @@ la commande en question :
 photorec USB.Image
 ```
 
-le résultat se trouve dans un dossier que la commande a créé :
-
 ![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/photorec_USB_Image_4.png "Logo Title Text 1")
+
+Le résultat se trouve dans un dossier que la commande a créé :
+
+![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recupdir_1.1.png)
+
+![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recupdir_1.png)
+
+
 
 Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux 
 et 2 contenant le contenu suivant : BOSCH {1MAG3}
