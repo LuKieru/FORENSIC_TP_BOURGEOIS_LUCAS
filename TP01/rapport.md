@@ -85,7 +85,7 @@ Le résultat se trouve dans un dossier que la commande a créé :
 
 ![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recup_dir_1.png "recupdir 2")
 
-
+Ci-joint une copie de ce dossiersi vous cliquez[ici](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/tree/main/TP01/img/dossier%20de%20recup%20photorec "dossier de récup photorec")
 
 Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux 
 et 2 contenant le contenu suivant : BOSCH {1MAG3}
