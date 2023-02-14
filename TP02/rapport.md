@@ -15,7 +15,7 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
   <summary>Réponse attendue</summary>
          
          
-         awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
+         
          
          
          
@@ -35,8 +35,9 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
          
          Ici, c'est le nom du fichier ou il la commande va se faire
          
-         
+         ```
          | grep "LYON" | wc -l
+         ```
          
          Cette dernière partie va compléter la commande : on va chercher uniquement la chaine de caractères
          "LYON" et compter les lignes qui les contiennent.
@@ -46,5 +47,23 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
 </details>
 
 
+<details>
+  <summary>Réponse</summary>
+  
+  ### Réponse entière
+  ```
+  awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
+  ```
+  1. Foo
+  2. Bareazea
+     * Qux
+
+  ### Some Code
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
 
 
