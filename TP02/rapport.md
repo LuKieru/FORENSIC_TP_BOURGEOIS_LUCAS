@@ -11,15 +11,8 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
 
 
 
-
-
-<!DOCTYPE html>
-<head>
-<head>
-</head>
-<body>
-    	<details>
-        <summary>Réponse attendue</summary>
+<details>
+  <summary>Réponse attendue</summary>
          
          
          awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
@@ -49,25 +42,7 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
          "LYON" et compter les lignes qui les contiennent.
          
          Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 
-         lignes qui contiennent la commune de LYON.            	
-</body>
-</html>
-
-<details>
-  <summary>Click me</summary>
-  
-  ### Heading
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
-
-  ### Some Code
-  ```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
+         lignes qui contiennent la commune de LYON.  
 </details>
 
 
