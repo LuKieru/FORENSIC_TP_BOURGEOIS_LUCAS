@@ -1,6 +1,8 @@
 # Rapport d'analyse Forensique 
 ###### sur l'objet suivant : Clé USB trouvée sur le parking.
 
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Logo-police-nationale-france.svg/800px-Logo-police-nationale-france.svg.png "Logo police")
+
 ## Rappel du contexte :
 
 Un agent a trouvé une clé USB près du parking du commissariat. Il l'a donc apportée au service forensic pour savoir si cette clé était malveillante ou non avant de la brancher.
@@ -12,6 +14,14 @@ Avant toute analyse, on s'assure qu'elle n'a pas été branchée sur les postes 
 Au préalable, on branchera cette clé sur aucun terminal relié au réseau du commissariat. Ici, nous la brancherons sur un poste que l'on nomme **Station blanche** puisqu'elle n'est reliée à aucun réseau et est dédiée à l'analyse de supports comme par exemple cette clé USB.
 
 De plus, une copie exacte de cette clé sera faite pour l'analyser, en cas de modification pendant l'analyse ce qui pourrait ralentir ou stopper cette analyse.
+
+- [x] La clé n'a pas été introduite dans le SI du commissariat.
+
+- [x] La station blanche est opérationnelle et sécurisée.
+
+- [x] L'objet non-identifié est copié et sécurisé.
+
+
 
 ## Début de l'analyse :
 
