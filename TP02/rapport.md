@@ -2,6 +2,11 @@
 
 Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fichier 'consommation-annuelle-residentielle-par-adresse.csv' qui contiennent la ville de LYON dans la colonne NOM_Commune.
 
+Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRIS dans la commune de Lyon.
+
+###### IRIS =  Ilots Regroupés pour l'Information Statistique
+
+>Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fichier 'consommation-annuelle-residentielle-par-adresse.csv' qui contiennent la ville de LYON dans la colonne NOM_Commune.
 
 
 
