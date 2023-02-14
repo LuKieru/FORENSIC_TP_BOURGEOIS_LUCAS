@@ -55,3 +55,18 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
     	
 </body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<head>
+<head>
+</head>
+<body>
+    	
+        	<summary>Réponse attendue</summary>
+        	
+</body>
+</html>
+  
