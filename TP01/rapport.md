@@ -6,7 +6,7 @@
 
 Un agent a trouvé une clé USB près du parking du commissariat. Il l'a donc apportée au service forensic pour savoir si cette clé était malveillante ou non avant de la brancher.
 
-## Analyse :
+## Avant l'analyse :
 
 Avant toute analyse, on s'assure qu'elle n'a pas été branchée sur les postes du commissariat. L'agent a donc bien fait de venir le service forensic directement puisqu'on ne sait ce qu'elle contient.
 
@@ -101,7 +101,7 @@ Ci-joint une copie de ce dossiersi vous cliquez [ici](https://github.com/LuKieru
 Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux 
 puis 2 contenant le contenu suivant : 
 
-###### 	bosch{1MAG3}
+###### 	==bosch{1MAG3}==
 
 
 Le fichier .ini contenait lui :
