@@ -7,21 +7,21 @@ Obtenir le nombre de lignes dans le fichier qui contient la ville LYON dans la c
 
 
 
-###### réponse : 
-awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
+
 
 
 <!DOCTYPE html>
 <head>
 <head>
     <title>
-         “spoiler” text in github wiki pages
+         réponse de l'exercice
     </title>
 </head>
 <body>
     <details>
-        <summary>GeeksforGeeks</summary>
-         A Computer Science Portal for Geeks
+        <summary>Solution</summary>
+        	###### réponse : 
+			awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
     </details>        
 </body>
 </html>
