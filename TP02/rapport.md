@@ -23,24 +23,28 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
 ```
 awk -F";"
 ```
-  	* Va donner le type de séparation dans le fichier CSV (donc ici, le point virgule qui par défaut est simplement une virgule). Cette partie dont le -F est important car sans spécification du format de séparation, le résultat change complètement la façon de lire le fichier et donc le résultat.
+Va donner le type de séparation dans le fichier CSV (donc ici, le point virgule qui par défaut est simplement une virgule). Cette partie dont le -F est important car sans spécification du format de séparation, le résultat change complètement la façon de lire le fichier et donc le résultat.
   	
   2. 
 ```
-  '{print $9}'
+'{print $9}'
 ```
-     	* Cette partie va aller récupérer la colonne 9, celle des noms de commune.
+
+Cette partie va aller récupérer la colonne 9, celle des noms de commune.
      	
   3. 
-``` consommation-annuelle-residentielle-par-adresse.csv
+``` 
+consommation-annuelle-residentielle-par-adresse.csv
 ```
-  	* Ici, c'est le nom du fichier ou il la commande va se faire
+
+Ici, c'est le nom du fichier ou il la commande va se faire
   	
   4.	
 ```
 | grep "LYON" | wc -l
 ```
-	* Cette dernière partie va compléter la commande : on va chercher uniquement la chaine de caractères "LYON" et compter les lignes qui les contiennent.
+
+Cette dernière partie va compléter la commande : on va chercher uniquement la chaine de caractères "LYON" et compter les lignes qui les contiennent.
 
 Enfin, le résultat qui doit être obtenu est le suivant : 12421, dans le fichier il y a 12421 lignes qui contiennent la commune de LYON : 
 
