@@ -94,13 +94,16 @@ puis 2 contenant le contenu suivant :
 
 ###### 	bosch{1MAG3}
 
-le fichier ini contenait lui : 
+
+Le fichier .ini contenait lui : 
 [Trash Info]
 Path=secret.png
 DeletionDate=2023-02-10T22:21:51
 
-C'est le même résultat que j'ai obtenu lors de la commande strings.
+C'est le même résultat obtenu lors de la commande strings.
+
+Le Flag a donc été trouvé, fin du rapport d'analyse.
 
 
-Rapport réalisé le 13/02/2023 à 16:09 par Lucas Bourgeois
+###### Rapport réalisé le 13/02/2023 à 16:09 par Lucas Bourgeois
 
