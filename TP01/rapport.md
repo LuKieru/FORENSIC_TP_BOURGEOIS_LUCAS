@@ -11,13 +11,15 @@ Avant toute analyse, on s'assure qu'elle n'a pas été branchée sur les postes 
 
 Au préalable, on branchera cette clé sur aucun terminal relié au réseau du commissariat. Ici, nous la brancherons sur un poste que l'on nomme **Station blanche** puisqu'elle n'est reliée à aucun réseau et est dédiée à l'analyse de supports comme par exemple cette clé USB.
 
+De plus, une copie exacte de cette clé sera faite pour l'analyser, en cas de modification pendant l'analyse ce qui pourrait ralentir ou stopper cette analyse.
+
 ## Début de l'analyse :
 
 Nous sommes donc sur un environnement Linux, Ubuntu. Après avoir branché cette clé, voici les étapes effectuées :
 
 Tout d'abord, vérifier l'intégrité du contenu USB_Image :
 ```
-SHA256sum USB_Image
+sha256sum USB_Image
 ```
 
 la réponse : 
@@ -85,10 +87,12 @@ Le résultat se trouve dans un dossier que la commande a créé :
 
 ![alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP01/img/recup_dir_1.png "recupdir 2")
 
-Ci-joint une copie de ce dossiersi vous cliquez [ici](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/tree/main/TP01/img/dossier%20de%20recup%20photorec "dossier de récup photorec")
+Ci-joint une copie de ce dossiersi vous cliquez [ici](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/tree/main/TP01/img/dossier%20de%20recup%20photorec "dossier de récup photorec").
 
 Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux 
-et 2 contenant le contenu suivant : BOSCH {1MAG3}
+puis 2 contenant le contenu suivant : 
+
+###### 	bosch{1MAG3}
 
 le fichier ini contenait lui : 
 [Trash Info]
