@@ -106,9 +106,11 @@ puis 2 contenant le contenu suivant :
 
 Le fichier .ini contenait lui :
 
+```
 [Trash Info]
 Path=secret.png
 DeletionDate=2023-02-10T22:21:51
+```
 
 C'est le même résultat obtenu lors de la commande strings.
 
