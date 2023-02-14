@@ -1,6 +1,6 @@
 ## Exercice : 
 
-Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fichier 'consommation-annuelle-residentielle-par-adresse.csv' qui contient la ville LYON dans la colonne NOM_Commune.
+Via une ligne de commande, le but est d'obtenir le nombre de lignes dans le fichier 'consommation-annuelle-residentielle-par-adresse.csv' qui contiennent la ville de LYON dans la colonne NOM_Commune.
 
 
 
