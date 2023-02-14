@@ -117,5 +117,5 @@ C'est le même résultat obtenu lors de la commande strings.
 Le Flag a donc été trouvé, fin du rapport d'analyse.
 
 
-###### Rapport réalisé le 13/02/2023 à 16:09 par Lucas Bourgeois
+###### Rapport réalisé le 14/02/2023 à 09:45 par Lucas Bourgeois
 
