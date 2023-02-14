@@ -19,6 +19,12 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
   awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
   ```
   
+  
+  
+  ### Explications pas à pas
+  
+  
+  
   1. awk et l'option F
 ```
 awk -F";"
