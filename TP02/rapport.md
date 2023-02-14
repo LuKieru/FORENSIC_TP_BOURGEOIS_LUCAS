@@ -22,28 +22,28 @@ Une demande a été faite : depuis ce fichier, déterminer le nombre total d'IRI
         <summary>Réponse attendue</summary>
          
          
-         awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
+         * awk -F";" '{print $9}' consommation-annuelle-residentielle-par-adresse.csv | grep "LYON" | wc -l
          
          
          
-         awk -F";" 
+         * awk -F";" 
          
          Va donner le type de séparation dans le fichier CSV (donc ici, le point virgule qui par défaut est
          simplement une virgule). Cette partie dont le -F est important car sans spécification du format 
          de séparation, le résultat change complètement la façon de lire le fichier et donc le résultat.
          
          
-         '{print $9}'
+         * '{print $9}'
          
          Cette partie va aller récupérer la colonne 9, celle des noms de commune.
          
          
-         consommation-annuelle-residentielle-par-adresse.csv
+         * consommation-annuelle-residentielle-par-adresse.csv
          
          Ici, c'est le nom du fichier ou il la commande va se faire
          
          
-         | grep "LYON" | wc -l
+         * | grep "LYON" | wc -l
          
          Cette dernière partie va compléter la commande : on va chercher uniquement la chaine de caractères
          "LYON" et compter les lignes qui les contiennent.
