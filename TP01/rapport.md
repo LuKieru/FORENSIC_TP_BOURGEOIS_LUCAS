@@ -101,7 +101,7 @@ Ci-joint une copie de ce dossiersi vous cliquez [ici](https://github.com/LuKieru
 Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux 
 puis 2 contenant le contenu suivant : 
 
-==bosch{1MAG3}==
+<mark>bosch{1MAG3}</mark>
 
 
 Le fichier .ini contenait lui :
