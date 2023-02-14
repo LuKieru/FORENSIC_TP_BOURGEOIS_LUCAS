@@ -104,7 +104,8 @@ puis 2 contenant le contenu suivant :
 ###### 	bosch{1MAG3}
 
 
-Le fichier .ini contenait lui : 
+Le fichier .ini contenait lui :
+
 [Trash Info]
 Path=secret.png
 DeletionDate=2023-02-10T22:21:51
