@@ -95,13 +95,15 @@ demande bien un mot de passe que nous n'avons pour l'instant pas à disposition.
 
 Plusieurs commandes sont ensuites passées pour Troobleshooter cet environnement dans lequel nous nous trouvons.
 
-> cat /etc/hosts
-
->cat /etc/passwd
-
+```
+cat /etc/hosts
+cat /etc/passwd
+```
 ![Alt text](img/cat_hosts_passwd.png "cat_hosts_passwd.png")
 
->cat /var/www/html/index.html
+```
+cat /var/www/html/index.html
+```
 
 ```html
 <!DOCTYPE html>
