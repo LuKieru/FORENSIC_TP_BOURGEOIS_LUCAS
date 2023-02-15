@@ -204,7 +204,11 @@ grep "138.66.89.12 /var/log/apache2/access.log     | découverte du mot de passe
 Fin du rapport.
 _____________________________________________________________
 
+<center>
+
 Date et heure | Auteur du rapport  | Signature
-:--------| :----- | :-----
+| :------------: | :------------: | :------------: |
 15/02/2023 à 13:38 | Lucas Bourgeois | LB
+
+</center>
 ______________________________________________________________
