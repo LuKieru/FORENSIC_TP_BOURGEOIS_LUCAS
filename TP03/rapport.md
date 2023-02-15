@@ -29,7 +29,7 @@ Dans cette partie seront données les manières d'analyser l'environnement qui h
 
 dans cette commande :
 
-![Alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP03/img/cat_hosts_passwd.png "cat_hosts_passwd.png")
+![Alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP03/img/history.png "cat_hosts_passwd.png")
 
 on voit qu'il y a un fichier .zip qui a été protégé par un mot de passe "bosch_cyber_tools.zip"
 ce mot de passe peut etre lu depuis "/tmp/mypassword"
