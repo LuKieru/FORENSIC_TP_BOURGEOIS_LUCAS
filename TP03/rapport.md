@@ -61,7 +61,9 @@ cat README.md
 On nous retourne ceci pour se connecter, un identifiant et un mot de passe :
 
 >docker-compose up -d
+
 >ssh b0sch@127.0.0.1 -p 2222
+
 >9mZzpX7KE6sKAP
 
 On rentre alors ces lignes pour accéder à la machine :
