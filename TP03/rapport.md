@@ -1,29 +1,51 @@
 # Rapport d'analyse
 
+### Préparation
+
+Pour intervenir dans ce cas, au préalable il faudra valider certains points de sécurité :
+
+- [x] La station blanche est prête à accueillir l'élément à analyser.
+
+- [x] La station blanche sur laquelle nous effectuons l'analyse est coupé de tout réseau.
+
+- [x] La station blanche sur laquelle nous effectuons l'analyse est coupé de tout périphérique externe.
+
+- [x] L'analyse de la machine s'effectue sur un clone virtuel de l'environnement de production.
+
+
+
 ### Introduction
 
-Le site web ==Bosch-cyber== a été attaqué. l'attaquant aurait récupéré des outils secrets très dangereux. Heureusement l'administration a mis le site eb maintenance. 
+Le site web Bosch-cyber a été attaqué. l'attaquant aurait récupéré des outils secrets très dangereux. Heureusement l'administration a mis le site eb maintenance. 
 
-###### Notre mission : déterminer ce qui a été exfiltré par l'attaquant.
+###### La mission : déterminer ce qui a été exfiltré par l'attaquant.
 
 ### Méthodologie
 
+Dans cette partie seront données les manières d'analyser l'environnement qui hébèrge le site web Bosch-cyber. 
 
 
-dans la commande history on voit qu'il y a un fichier .zip qui a été protégé par un mot de passe "bosch_cyber_tools.zip"
+### Résultats
+
+dans cette commande :
+
+![Alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP03/img/cat_hosts_passwd.png "cat_hosts_passwd.png")
+
+on voit qu'il y a un fichier .zip qui a été protégé par un mot de passe "bosch_cyber_tools.zip"
 ce mot de passe peut etre lu depuis "/tmp/mypassword"
+
 
 >unzip bosch_cyber_tools.zip 
 
-demande un mot de passe
+demande un ==mot de passe==
 
 > cat /etc/hosts
-> 
+
 172.18.0.2
 
 >cat /var/www/html/index.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +67,7 @@ cat .bash_logout
 cat .bashrc 
 cat .profile 
 cat .viminfo 
-cat .cache/
+>cat .cache/
 
 rien
 
