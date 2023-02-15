@@ -203,32 +203,7 @@ grep "138.66.89.12 /var/log/apache2/access.log     | découverte du mot de passe
 
 Fin du rapport.
 _____________________________________________________________
-
-<center>
-
 Date et heure | Auteur du rapport  | Signature
 | :------------: | :------------: | :------------: |
-15/02/2023 à 13:38 | Lucas Bourgeois | LB
-
-</center>
-
-
-
-FORMAT: 1A
-HOST: http://www.google.com
-
-# Tables
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
-
-<center>
-
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-
-</center>
-
-
+15/02/2023  13:38 | Lucas Bourgeois | LB
 
