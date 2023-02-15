@@ -48,7 +48,6 @@ Les IOC trouvés lors de l'analyse seront présentés et expliqué dans la parti
 
 Dans cette partie sont donnés les résultats de l'analyse complète. On y trouve les données récoltées qui ont fait avancer l'enquête.
 
-##### Partie 1 : découverte de l'environnement
 
 Il a fallut se connecter sur la machine (pour cet analyse via docker) :
 ```
