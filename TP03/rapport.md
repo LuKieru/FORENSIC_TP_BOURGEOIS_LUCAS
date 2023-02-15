@@ -13,8 +13,7 @@ Pour intervenir dans ce cas, au préalable il faudra valider certains points de 
 - [x] L'analyse de la machine s'effectue sur un clone virtuel de l'environnement de production.
 
 
-
-## Introduction
+## Introduction
 
 Le site web Bosch-cyber a été attaqué. l'attaquant aurait récupéré des outils secrets très dangereux. Heureusement l'administration a mis le site eb maintenance. 
 
