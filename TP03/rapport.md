@@ -134,7 +134,7 @@ Ces commandes n'ont rien donné de plus pour la suite de l'enquête. Le bash_his
 En parcourant les dossiers et fichier dans /etc (shadow, passwd et hosts), nous trouvons intéressant et important de vérifier le fichier des taches planifiées.
 
 ```
-cat crontab
+cat /etc/crontab
 ```
 
 ![Alt text](img/cat_crontab.png "cat_crontab.png")
@@ -204,9 +204,7 @@ grep "138.66.89.12 /var/log/apache2/access.log     | découverte du mot de passe
 Fin du rapport.
 _____________________________________________________________
 
-###### Rapport rédigé le 15/02/2023 à 13:38
-
-###### Par Lucas Bourgeois
-
-###### Signature : LB
+Date et heure | Auteur du rapport  | Signature
+:--------| :----- | :-----
+15/02/2023 à 13:38 | Lucas Bourgeois | LB
 ______________________________________________________________
